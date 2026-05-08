@@ -1,0 +1,106 @@
+{
+  "Metadata": {
+    "title": "HRN | Senior Backend Engineer Portfolio",
+    "description": "Portfolio of HRN — a senior backend engineer specializing in Domain-Driven Design, large-scale system modernization, and AI-orchestrated software delivery.",
+    "ogTitle": "HRN | Senior Backend Engineer Portfolio",
+    "ogDescription": "Senior backend engineer architecting resilient, evolvable systems with DDD, Clean Architecture, and AI-driven development.",
+    "siteName": "HRN — Senior Backend Engineer"
+  },
+  "Index": {
+    "hero": {
+      "eyebrow": "Senior Backend Engineer · Portfolio",
+      "nameLine": "HRN",
+      "roleLine": "Senior Backend Engineer",
+      "summary": "Senior backend engineer with 7+ years architecting and modernizing production systems in Java and PHP (Laravel), and now leading TypeScript replatforming engagements.\nI embed AI-driven development into mission-critical workflows to deliver enterprise-grade quality at startup velocity.",
+      "highlight": "Engineering across public sector, finance, SaaS, and healthcare — driving end-to-end improvement from architecture through operations.",
+      "imageAlt": "Profile portrait of HRN"
+    }
+  },
+  "Skills": {
+    "eyebrow": "Expertise",
+    "heading": "Engineering Strengths & Stack",
+    "tagline": "Architectural rigor × AI-driven velocity",
+    "featured": {
+      "ddd": {
+        "title": "Domain-Driven Design",
+        "subtitle": "Actively practiced & continuously refined",
+        "description": "Built on the system-design discipline cultivated across Java and PHP, I architect TypeScript (NestJS / Next.js) systems that ruthlessly separate business logic from infrastructure and treat bounded contexts as first-class architectural primitives. Every implementation is anchored in the domain model — engineered for the long-term maintainability and evolutionary change that real businesses demand.",
+        "tags": ["Bounded Context", "Clean Architecture", "Layered Design", "NestJS", "Next.js"]
+      },
+      "vibeCoding": {
+        "title": "AI Prompt Engineering & Vibe Coding",
+        "subtitle": "Production-grade AI orchestration",
+        "description": "I orchestrate Cursor, Claude Code, and Gemini as a coordinated engineering force in real production work. By translating DDD-grounded component designs and responsibility boundaries into precise, specification-level prompts, I direct AI to execute the implementation — shipping production-ready code at exceptional velocity without compromising architectural quality. This is Vibe Coding executed with engineering rigor.",
+        "tags": ["Cursor", "Claude Code", "Gemini", "Vibe Coding", "Spec-Driven"]
+      }
+    },
+    "categories": {
+      "languages": {
+        "title": "Languages",
+        "description": "Server-side languages I rely on for production work"
+      },
+      "frontend": {
+        "title": "Frontend",
+        "description": "Modern UI implementation engineered around the API contract"
+      },
+      "backend": {
+        "title": "Backend",
+        "description": "Architectures grounded in DDD and Clean Architecture principles"
+      },
+      "infra": {
+        "title": "Cloud / Infra",
+        "description": "Standardized development environments and CI/CD pipelines"
+      }
+    }
+  },
+  "Projects": {
+    "heading": "Selected Engagements",
+    "tagline": "Representative work",
+    "medicalApp": {
+      "title": "AI-Integrated Web & Mobile Application for Healthcare Providers",
+      "description": "Strategic recovery of a delayed, high-stakes project through architectural redesign. Architected the Java-to-TypeScript replatforming on a DDD foundation, optimized API performance, modeled the database schema, and established automated test coverage to safeguard delivery."
+    },
+    "vulnerabilityPlatform": {
+      "title": "Vulnerability Management SaaS — Platform Development & Operations",
+      "description": "Owned end-to-end backend feature delivery and targeted refactoring on a vulnerability-management SaaS. Hardened third-party API integrations, unified cross-service exception handling, and standardized the development workflow with Docker / WSL2 — compressing onboarding time and lifting overall code quality."
+    },
+    "hrSystem": {
+      "title": "Enterprise HR Management System",
+      "description": "Sustained multi-year continuous delivery on a business-critical HR platform. Owned detailed design, implementation, and unit testing across successive legal-compliance releases — protecting stable operations while shipping change with confidence."
+    }
+  },
+  "Career": {
+    "heading": "Career",
+    "senior": {
+      "period": "2024 — Present",
+      "role": "Senior Backend Engineer",
+      "detail": "Spearheading modernization and AI-driven development across legacy estates. Delivered a vulnerability-management SaaS in PHP (Laravel) and architected a DDD-based redesign of a healthcare application on TypeScript / NestJS. Championed refactoring, test automation, and a Docker / WSL2-based dev environment standard adopted across teams."
+    },
+    "midlevel": {
+      "period": "2021 — 2024",
+      "role": "Backend Engineer",
+      "detail": "Drove roughly three years of continuous delivery on legal-compliance updates for an enterprise HR platform. Owned detailed design, implementation, and testing across Java, PostgreSQL, and Oracle — sustaining stable long-term operations on a business-critical system."
+    },
+    "junior": {
+      "period": "2019 — 2021",
+      "role": "Software Engineer",
+      "detail": "Launched my career engineering government and financial systems — including a national employment-services platform and an individual pension insurance system. Mastered waterfall-style detailed design through QA in Java / SQL, and delivered internal IT onboarding training to new engineers."
+    }
+  },
+  "Contact": {
+    "heading": "Get in Touch",
+    "description": "Open to conversations around technical consulting, development partnership, and selective contract engineering engagements. Reach out via the channels below.",
+    "emailLabel": "Email",
+    "githubLabel": "GitHub",
+    "ctaLabel": "Start a conversation",
+    "mailto": {
+      "subject": "[Portfolio] Engineering engagement inquiry",
+      "body": "Name:\nCompany:\nEngagement details:\n"
+    }
+  },
+  "LanguageSwitcher": {
+    "label": "Language",
+    "ja": "日本語",
+    "en": "English"
+  }
+}

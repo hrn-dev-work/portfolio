@@ -12,6 +12,15 @@ const config: Config = {
       colors: {
         background: "#0b1020",
         foreground: "#dce6ff"
+      },
+      fontFamily: {
+        sans: [
+          "var(--font-sans)",
+          "var(--font-sans-jp)",
+          "ui-sans-serif",
+          "system-ui",
+          "sans-serif"
+        ]
       }
     }
   },

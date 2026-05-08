@@ -1,0 +1,106 @@
+{
+  "Metadata": {
+    "title": "HRN | バックエンドエンジニア デジタル名刺",
+    "description": "HRNのデジタル名刺サイト。バックエンドエンジニアとしての経歴、スキル、主要プロジェクト、連絡先を掲載。",
+    "ogTitle": "HRN | バックエンドエンジニア デジタル名刺",
+    "ogDescription": "設計と運用に強いバックエンドエンジニア HRN のプロフィール。",
+    "siteName": "HRN Digital Business Card"
+  },
+  "Index": {
+    "hero": {
+      "eyebrow": "Backend Engineer Portfolio",
+      "nameLine": "HRN",
+      "roleLine": "バックエンドエンジニア",
+      "summary": "Java / PHP（Laravel）を軸に7〜8年、近年は TypeScript によるシステムリプレイスにも従事。\nAI駆動開発を実務に組み込み、開発速度と品質の両立を重視しています。",
+      "highlight": "官公庁・金融・SaaS・医療領域で、設計から運用まで一貫して改善を推進。",
+      "imageAlt": "プロフィール画像"
+    }
+  },
+  "Skills": {
+    "eyebrow": "Skills",
+    "heading": "強みと技術スタック",
+    "tagline": "設計力 × AI 駆動開発",
+    "featured": {
+      "ddd": {
+        "title": "Domain-Driven Design",
+        "subtitle": "現在深く学習・実践中",
+        "description": "Java / PHP で培った堅牢なシステム設計の経験を土台に、TypeScript（NestJS / Next.js）環境でも、ビジネスロジックとインフラ層の分離、境界付けられたコンテキストを意識したクリーンアーキテクチャ設計を追求しています。長期的な保守性と拡張性を最優先に、ドメインモデルを中心に据えた実装を志向。",
+        "tags": ["Bounded Context", "Clean Architecture", "Layered Design", "NestJS", "Next.js"]
+      },
+      "vibeCoding": {
+        "title": "AI Prompt Engineering & Vibe Coding",
+        "subtitle": "実務レベルでの AI オーケストレーション",
+        "description": "Cursor / Claude Code / Gemini を使い分け、業務でオーケストレーション。DDD に基づくコンポーネント設計や責務分離の要件を高精度なプロンプトとして言語化し、AI に実装を任せることで、品質と開発スピードを両立する Vibe Coding を実践しています。",
+        "tags": ["Cursor", "Claude Code", "Gemini", "Vibe Coding", "Spec-Driven"]
+      }
+    },
+    "categories": {
+      "languages": {
+        "title": "Languages",
+        "description": "サーバーサイドを中心とした言語スタック"
+      },
+      "frontend": {
+        "title": "Frontend",
+        "description": "API 連携を意識したモダンUI実装"
+      },
+      "backend": {
+        "title": "Backend",
+        "description": "DDD・クリーンアーキテクチャを意識した実装"
+      },
+      "infra": {
+        "title": "Cloud / Infra",
+        "description": "開発環境の標準化と CI/CD 自動化"
+      }
+    }
+  },
+  "Projects": {
+    "heading": "Projects",
+    "tagline": "主要案件の抜粋",
+    "medicalApp": {
+      "title": "医療機関向け AI 連携Web/スマホアプリ開発",
+      "description": "遅延プロジェクトのリカバリーとして参画。Java から TypeScript へのリプレイスで DDD を用いた再設計、API最適化、DB設計、テスト自動化を担当。"
+    },
+    "vulnerabilityPlatform": {
+      "title": "脆弱性管理プラットフォーム開発・運用保守",
+      "description": "SaaS バックエンドの新機能開発とリファクタリングを実施。外部API連携、例外ハンドリング共通化、Docker/WSL2を活用した開発標準化を推進。"
+    },
+    "hrSystem": {
+      "title": "法人向け総合人事システム",
+      "description": "法改正対応のシステム改修で、詳細設計・実装・単体テストを継続担当。長期案件で安定運用を重視した改善に従事。"
+    }
+  },
+  "Career": {
+    "heading": "Career",
+    "senior": {
+      "period": "2024 - Present",
+      "role": "Senior Backend Engineer",
+      "detail": "モダン技術スタックへの移行とAI駆動開発を推進。PHP（Laravel）による脆弱性管理SaaS開発、TypeScript/NestJSによる医療向けアプリのDDDベース再設計を担当し、リファクタリング、テスト自動化、Docker/WSL2による開発環境標準化を牽引。"
+    },
+    "midlevel": {
+      "period": "2021 - 2024",
+      "role": "Backend Engineer",
+      "detail": "法人向け総合人事システムの法改正対応プロジェクト等に約3年間従事。Java、PostgreSQL、Oracleを用いた詳細設計・実装・テストを継続し、長期案件で安定稼働を支えるシステム改修を担当。"
+    },
+    "junior": {
+      "period": "2019 - 2021",
+      "role": "Software Engineer",
+      "detail": "官公庁・金融向けシステム（職業安定所システム、個人年金保険システム等）の開発・保守でキャリアをスタート。Java/SQLを中心にウォーターフォール開発の詳細設計からテストまでを経験し、バックエンド開発の基礎を確立。新人向け社内IT研修の講師も担当。"
+    }
+  },
+  "Contact": {
+    "heading": "Contact",
+    "description": "技術相談、開発支援、業務委託などのご相談は以下までご連絡ください。",
+    "emailLabel": "Email",
+    "githubLabel": "GitHub",
+    "ctaLabel": "ご相談はこちら（メール）",
+    "mailto": {
+      "subject": "【お問い合わせ】ポートフォリオより",
+      "body": "お名前：\n企業名：\nご用件：\n"
+    }
+  },
+  "LanguageSwitcher": {
+    "label": "Language",
+    "ja": "日本語",
+    "en": "English"
+  }
+}
