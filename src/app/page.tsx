@@ -67,6 +67,7 @@ export default function Home() {
           </h1>
           <p className="mt-5 max-w-2xl text-sm leading-7 text-slate-300 md:text-base">
             Java / PHP（Laravel）を軸に7〜8年、近年は TypeScript によるシステムリプレイスにも従事。
+            <br />
             AI駆動開発を実務に組み込み、開発速度と品質の両立を重視しています。
           </p>
           <ul className="mt-5 flex flex-wrap gap-2">
