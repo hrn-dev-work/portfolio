@@ -48,6 +48,17 @@ export function ContactSection() {
             {contactInfo.githubLabel}
           </a>
         </p>
+        <p>
+          {t("linkedinLabel")}:{" "}
+          <a
+            className="text-sky-300 underline underline-offset-4 hover:text-sky-200"
+            href={contactInfo.linkedinUrl}
+            target="_blank"
+            rel="noreferrer"
+          >
+            {contactInfo.linkedinLabel}
+          </a>
+        </p>
       </div>
       <a
         href={mailtoHref}

@@ -92,6 +92,7 @@
     "description": "技術相談、開発支援、業務委託などのご相談は以下までご連絡ください。",
     "emailLabel": "Email",
     "githubLabel": "GitHub",
+    "linkedinLabel": "LinkedIn",
     "ctaLabel": "ご相談はこちら（メール）",
     "mailto": {
       "subject": "【お問い合わせ】ポートフォリオより",

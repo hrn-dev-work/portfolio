@@ -92,6 +92,7 @@
     "description": "Open to conversations around technical consulting, development partnership, and selective contract engineering engagements. Reach out via the channels below.",
     "emailLabel": "Email",
     "githubLabel": "GitHub",
+    "linkedinLabel": "LinkedIn",
     "ctaLabel": "Start a conversation",
     "mailto": {
       "subject": "[Portfolio] Engineering engagement inquiry",
