@@ -18,19 +18,22 @@ const projects = [
     title: "医療機関向け AI 連携Web/スマホアプリ開発",
     summary:
       "遅延プロジェクトのリカバリーとして参画。Java から TypeScript へのリプレイスで DDD を用いた再設計、API最適化、DB設計、テスト自動化を担当。",
-    stack: ["TypeScript", "NestJS", "Prisma", "PostgreSQL", "Redis", "AWS S3/SQS"]
+    stack: ["TypeScript", "NestJS", "Prisma", "PostgreSQL", "Redis", "AWS S3/SQS"],
+    metric: "体制: 全体47名 / アプリ30名"
   },
   {
     title: "脆弱性管理プラットフォーム開発・運用保守",
     summary:
       "SaaS バックエンドの新機能開発とリファクタリングを実施。外部API連携、例外ハンドリング共通化、Docker/WSL2を活用した開発標準化を推進。",
-    stack: ["PHP", "Laravel", "MySQL", "PostgreSQL", "Docker", "AWS EC2/S3"]
+    stack: ["PHP", "Laravel", "MySQL", "PostgreSQL", "Docker", "AWS EC2/S3"],
+    metric: "開発期間: 7ヶ月 / 7名体制"
   },
   {
     title: "法人向け総合人事システム（3年）",
     summary:
       "法改正対応のシステム改修で、詳細設計・実装・単体テストを継続担当。長期案件で安定運用を重視した改善に従事。",
-    stack: ["Java", "JavaScript", "SQL", "PostgreSQL", "Oracle", "Tomcat"]
+    stack: ["Java", "JavaScript", "SQL", "PostgreSQL", "Oracle", "Tomcat"],
+    metric: "担当期間: 3年 / 14名体制"
   }
 ];
 
@@ -57,31 +60,34 @@ const career = [
 
 export default function Home() {
   return (
-    <main className="mx-auto min-h-screen w-full max-w-6xl cursor-default px-6 py-10 md:px-10 md:py-16">
-      <section className="section-card mb-8 grid items-center gap-6 md:grid-cols-[minmax(0,1fr)_auto]">
+    <main className="mx-auto min-h-screen w-full max-w-6xl cursor-default px-4 py-8 sm:px-6 md:px-10 md:py-16">
+      <section className="section-card mb-6 grid items-center gap-6 md:mb-8 md:grid-cols-[minmax(0,1fr)_auto]">
         <div className="min-w-0">
-          <p className="text-sm uppercase tracking-[0.18em] text-sky-300">Backend Engineer Portfolio</p>
-          <h1 className="mt-3 text-3xl font-semibold leading-tight tracking-tight text-white md:text-4xl lg:text-5xl">
+          <p className="text-xs uppercase tracking-[0.2em] text-sky-300 sm:text-sm">Backend Engineer Portfolio</p>
+          <h1 className="mt-3 text-2xl font-semibold leading-tight tracking-tight text-white sm:text-3xl md:text-4xl lg:text-5xl">
             <span className="block">HRN</span>
             <span className="block">バックエンドエンジニア</span>
           </h1>
-          <p className="mt-5 max-w-2xl text-sm leading-7 text-slate-300 md:text-base">
+          <p className="mt-4 max-w-2xl text-sm leading-7 text-slate-300 sm:mt-5 md:text-base">
             Java / PHP（Laravel）を軸に7〜8年、近年は TypeScript によるシステムリプレイスにも従事。
             <br />
             AI駆動開発を実務に組み込み、開発速度と品質の両立を重視しています。
+          </p>
+          <p className="mt-3 text-sm font-medium text-sky-200">
+            官公庁・金融・SaaS・医療領域で、設計から運用まで一貫して改善を推進。
           </p>
           <ul className="mt-5 flex flex-wrap gap-2">
             {certifications.map((cert) => (
               <li
                 key={cert}
-                className="select-none rounded-md border border-slate-700 bg-slate-800/60 px-3 py-1 text-xs text-slate-200"
+                className="select-none rounded-md border border-slate-700 bg-slate-800/60 px-2.5 py-1 text-[11px] text-slate-200 sm:px-3 sm:text-xs"
               >
                 {cert}
               </li>
             ))}
           </ul>
         </div>
-        <div className="mx-auto w-36 shrink-0 md:w-44 lg:w-52">
+        <div className="mx-auto w-32 shrink-0 sm:w-36 md:w-44 lg:w-52">
           <Image
             src="/profile-cat.png"
             alt="プロフィール画像"
@@ -93,7 +99,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mb-8 grid gap-4 md:grid-cols-2">
+      <section className="mb-6 grid gap-4 sm:mb-8 md:grid-cols-2">
         {skills.map((group) => (
           <article key={group.category} className="section-card">
             <h2 className="text-lg font-medium text-white">{group.category}</h2>
@@ -101,7 +107,7 @@ export default function Home() {
               {group.items.map((item) => (
                 <li
                   key={item}
-                  className="select-none rounded-full border border-slate-700 bg-slate-800/60 px-3 py-1 text-sm text-slate-200"
+                  className="select-none rounded-full border border-slate-700 bg-slate-800/60 px-3 py-1 text-xs text-slate-200 sm:text-sm"
                 >
                   {item}
                 </li>
@@ -111,16 +117,17 @@ export default function Home() {
         ))}
       </section>
 
-      <section className="section-card mb-8">
-        <div className="mb-5 flex items-center justify-between">
+      <section className="section-card mb-6 sm:mb-8">
+        <div className="mb-5 flex flex-col items-start gap-1 sm:flex-row sm:items-center sm:justify-between">
           <h2 className="text-2xl font-semibold text-white">Projects</h2>
           <span className="text-sm text-slate-400">主要案件の抜粋</span>
         </div>
-        <div className="grid gap-4 md:grid-cols-3">
+        <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
           {projects.map((project) => (
             <article key={project.title} className="rounded-xl border border-slate-800 bg-slate-900/90 p-4">
               <h3 className="text-base font-semibold text-slate-100">{project.title}</h3>
               <p className="mt-3 text-sm leading-6 text-slate-300">{project.summary}</p>
+              <p className="mt-3 text-xs font-medium text-emerald-300">{project.metric}</p>
               <div className="mt-4 flex flex-wrap gap-2">
                 {project.stack.map((tech) => (
                   <span
@@ -136,7 +143,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mb-8 grid gap-4 md:grid-cols-[1.4fr_1fr]">
+      <section className="mb-8 grid gap-4 lg:grid-cols-[1.4fr_1fr]">
         <article className="section-card flex flex-col">
           <h2 className="text-2xl font-semibold text-white">Career</h2>
           <ol className="mt-5 space-y-4">
@@ -178,7 +185,7 @@ export default function Home() {
             href="mailto:hrn.dev.work@gmail.com?subject=%E3%80%90%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B%E3%80%91%E3%83%9D%E3%83%BC%E3%83%88%E3%83%95%E3%82%A9%E3%83%AA%E3%82%AA%E3%82%88%E3%82%8A&body=%E3%81%8A%E5%90%8D%E5%89%8D%EF%BC%9A%0A%E4%BC%81%E6%A5%AD%E5%90%8D%EF%BC%9A%0A%E3%81%94%E7%94%A8%E4%BB%B6%EF%BC%9A%0A"
             className="mt-6 inline-flex w-full select-none items-center justify-center rounded-lg bg-sky-500 px-4 py-2.5 text-center text-sm font-medium text-slate-950 no-underline transition hover:bg-sky-400"
           >
-            お問い合わせを送る
+            ご相談はこちら（メール）
           </a>
         </article>
       </section>
