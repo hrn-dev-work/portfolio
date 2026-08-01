@@ -8,11 +8,11 @@
   },
   "Index": {
     "hero": {
-      "eyebrow": "Backend Engineer Portfolio",
+      "eyebrow": "NestJS & Laravel API · 連携",
       "nameLine": "HRN",
       "roleLine": "バックエンドエンジニア",
-      "summary": "Java / PHP（Laravel）を軸に7〜8年、近年は TypeScript によるシステムリプレイスにも従事。\nAI駆動開発を実務に組み込み、開発速度と品質の両立を重視しています。",
-      "highlight": "官公庁・金融・SaaS・医療領域で、設計から運用まで一貫して改善を推進。",
+      "summary": "NestJS / Laravel で API 設計・Webhook・外部連携を担当。Java / PHP（Laravel）で7〜8年、近年は TypeScript リプレイスにも従事。\nAI駆動開発を実務に組み込み、開発速度と品質の両立を重視しています。",
+      "highlight": "公開デモ: Ops Inbox API（Nest Webhook）と Laravel Outbound API。官公庁・金融・SaaS・医療の受託実績あり。",
       "imageAlt": "プロフィール画像"
     }
   },
@@ -55,7 +55,18 @@
   },
   "Projects": {
     "heading": "Projects",
-    "tagline": "主要案件の抜粋",
+    "tagline": "受託実績 + 公開デモ",
+    "repoLabel": "GitHub",
+    "demoLabel": "Live API",
+    "demoNoteDb": "無料枠の都合で、別サンプルが DB を使っている間はホスト DB が止まっていることがあります。",
+    "opsInboxApi": {
+      "title": "Ops Inbox API — 署名付き Webhook 受信（公開サンプル）",
+      "description": "NestJS 連携案件向けの証明用デモ。HMAC 検証、再送でも二重にならない保存、OpenAPI、初回のみ outbound 通知（既定はモック）。固定報酬・Upwork 系の API 案件を想定。"
+    },
+    "laravelOutboundApi": {
+      "title": "Laravel Outbound API — 連携モジュール（公開サンプル）",
+      "description": "Laravel スポット案件向けの証明用デモ。notify の入力検証、モックまたは HTTP 外向き呼び出しと記録、PHPUnit + smoke、Render 公開。本番キーをリポに入れずに API つなぎを示します。"
+    },
     "medicalApp": {
       "title": "医療機関向け AI 連携Web/スマホアプリ開発",
       "description": "遅延プロジェクトのリカバリーとして参画。Java から TypeScript へのリプレイスで DDD を用いた再設計、API最適化、DB設計、テスト自動化を担当。"

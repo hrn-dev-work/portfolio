@@ -8,11 +8,11 @@
   },
   "Index": {
     "hero": {
-      "eyebrow": "Senior Backend Engineer · Portfolio",
+      "eyebrow": "NestJS & Laravel API · Integrations",
       "nameLine": "HRN",
       "roleLine": "Senior Backend Engineer",
-      "summary": "Senior backend engineer with 7+ years architecting and modernizing production systems in Java and PHP (Laravel), and now leading TypeScript replatforming engagements.\nI embed AI-driven development into mission-critical workflows to deliver enterprise-grade quality at startup velocity.",
-      "highlight": "Engineering across public sector, finance, SaaS, and healthcare — driving end-to-end improvement from architecture through operations.",
+      "summary": "NestJS and Laravel backend for API design, webhooks, and third-party integrations — with 7+ years shipping Java/PHP systems and leading TypeScript replatforming.\nI embed AI-driven development into production workflows to deliver enterprise-grade quality at high velocity.",
+      "highlight": "Public proof demos: Ops Inbox API (Nest webhook) and Laravel Outbound API — plus client work across public sector, finance, SaaS, and healthcare.",
       "imageAlt": "Profile portrait of HRN"
     }
   },
@@ -55,7 +55,18 @@
   },
   "Projects": {
     "heading": "Selected Engagements",
-    "tagline": "Representative work",
+    "tagline": "Client work + public proof demos",
+    "repoLabel": "GitHub",
+    "demoLabel": "Live API",
+    "demoNoteDb": "Hosted DB may be offline on the free tier when another sample is using the slot.",
+    "opsInboxApi": {
+      "title": "Ops Inbox API — Signed Webhook Ingest (public sample)",
+      "description": "Portfolio proof for NestJS integration work: HMAC-verified webhooks, idempotent storage on retries, OpenAPI, and one recorded outbound notify (mock by default). Built for fixed-price / Upwork-style API briefs."
+    },
+    "laravelOutboundApi": {
+      "title": "Laravel Outbound API — Integration Module (public sample)",
+      "description": "Portfolio proof for Laravel spot work: validated notify endpoint, mock or HTTP outbound call with persisted audit rows, PHPUnit + smoke, hosted on Render. Shows API glue without shipping vendor secrets."
+    },
     "medicalApp": {
       "title": "AI-Integrated Web & Mobile Application for Healthcare Providers",
       "description": "Strategic recovery of a delayed, high-stakes project through architectural redesign. Architected the Java-to-TypeScript replatforming on a DDD foundation, optimized API performance, modeled the database schema, and established automated test coverage to safeguard delivery."

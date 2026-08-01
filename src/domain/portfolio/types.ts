@@ -2,7 +2,12 @@ import type { LucideIcon } from "lucide-react";
 
 export type FeaturedSkillKey = "ddd" | "vibeCoding";
 export type SkillCategoryKey = "languages" | "frontend" | "backend" | "infra";
-export type ProjectKey = "medicalApp" | "vulnerabilityPlatform" | "hrSystem";
+export type ProjectKey =
+  | "opsInboxApi"
+  | "laravelOutboundApi"
+  | "medicalApp"
+  | "vulnerabilityPlatform"
+  | "hrSystem";
 export type CareerKey = "senior" | "midlevel" | "junior";
 
 export type FeaturedSkillView = {
@@ -25,6 +30,9 @@ export type SkillCategoryView = {
 export type ProjectView = {
   key: ProjectKey;
   stack: string[];
+  repoUrl?: string;
+  demoUrl?: string;
+  demoNoteKey?: "demoNoteDb";
 };
 
 export type CareerView = {

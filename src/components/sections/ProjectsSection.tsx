@@ -38,6 +38,35 @@ export function ProjectsSection() {
                 </span>
               ))}
             </div>
+            {(project.repoUrl || project.demoUrl) && (
+              <div className="mt-4 flex flex-wrap gap-x-4 gap-y-2 text-sm">
+                {project.repoUrl ? (
+                  <a
+                    href={project.repoUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sky-300 underline-offset-2 hover:underline"
+                  >
+                    {t("repoLabel")}
+                  </a>
+                ) : null}
+                {project.demoUrl ? (
+                  <a
+                    href={project.demoUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sky-300 underline-offset-2 hover:underline"
+                  >
+                    {t("demoLabel")}
+                  </a>
+                ) : null}
+              </div>
+            )}
+            {project.demoNoteKey ? (
+              <p className="mt-2 text-xs leading-5 text-slate-500">
+                {t(project.demoNoteKey)}
+              </p>
+            ) : null}
           </article>
         ))}
       </div>
