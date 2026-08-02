@@ -11,6 +11,8 @@
 Next.js (App Router) と TypeScript で構築したポートフォリオサイトです。
 単なる Web 上の名刺ではなく、 **AI エージェントと熟練バックエンドエンジニアの協調** によるモダンなフロントエンド開発の実例として公開しています。
 
+> **TaxPort**（確定申告支援アプリ）は別リポジトリに分離しました: 同階層の [`../taxport`](../taxport)（`~/workspace/taxport`）を参照してください。
+
 ## 🌐 Live Demo
 
 🔗 [https://portfolio-teal-ten-31.vercel.app/](https://portfolio-teal-ten-31.vercel.app/)

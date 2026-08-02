@@ -2,6 +2,10 @@
 
 このドキュメントは、ローカル開発の起動/停止手順と、初期セットアップ時のトラブル対応ログを残すためのナレッジです。
 
+**Node / Docker / Prisma / 主要 npm のバージョン一覧**（AI への貼り付け用など）は [`toolchain-and-versions.md`](./toolchain-and-versions.md) を参照してください。
+
+**TaxPort（確定申告アプリ）** は [`../taxport`](../taxport) の README / `docs/dev-runbook.md` を参照（本リポジトリとは分離済み）。
+
 ## 1) 日常の起動手順
 
 ```bash
@@ -60,14 +64,14 @@ npm run dev
 
 `npm` が見つからない場合は、シェルを開き直したうえで再実行してください。
 
-## 4) 今回の復旧メモ
+## 5) 今回の復旧メモ
 
 - 状況: `node` は存在したが `npm` 実行時に `Command 'npm' not found` が発生。
 - 一時対応: `pnpm` を導入し、依存関係インストールと開発サーバー起動を先行実施。
 - 根本対応: `nvm` 配下の Node/npm を再インストールし、`npm` を復旧。
 - 仕上げ: `node_modules` をクリーンにして `npm install` を再実行し、`npm run dev` 起動確認。
 
-## 5) 確認コマンド
+## 6) 確認コマンド
 
 ```bash
 node -v
@@ -78,3 +82,4 @@ npm -v
 
 - `node`: `v24.15.0`（または同等の LTS）
 - `npm`: `11.x`
+
