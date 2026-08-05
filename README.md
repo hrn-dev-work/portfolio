@@ -1,6 +1,128 @@
-# 🚀 HRN Portfolio | Senior Backend Engineer × AI-Driven Development
+# HRN Portfolio | Senior Backend Engineer × AI-Driven Development
 
-🌐 **Languages:** **日本語** · [English](./README.en.md)
+![Next.js](https://img.shields.io/badge/Next.js-15-black?style=flat-square&logo=next.js&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white)
+![next-intl](https://img.shields.io/badge/next--intl-i18n-1f6feb?style=flat-square)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
+
+A portfolio site built with Next.js (App Router) and TypeScript.
+More than a digital business card — a working example of a senior backend engineer collaborating with AI agents on modern frontend delivery.
+
+> **TaxPort** (tax-filing support app) lives in a separate repo: [`../taxport`](../taxport) (`~/workspace/taxport`).
+
+## Live Demo
+
+[https://portfolio-teal-ten-31.vercel.app/](https://portfolio-teal-ten-31.vercel.app/)
+
+Vercel CI/CD auto-deploys every push to `main`.
+
+## Tech Stack
+
+### Frontend (this site)
+
+- **Framework**: Next.js 15 (App Router, RSC)
+- **Language**: TypeScript (strict)
+- **Styling**: Tailwind CSS
+- **Fonts**: Inter + Noto Sans JP via `next/font`
+- **i18n**: `next-intl` (`/ja`, `/en` subpaths + `Accept-Language` detection)
+- **Icons**: Lucide React
+
+### Backend experience
+
+- **Languages / Frameworks**: Java (Spring), PHP (Laravel), Node.js (NestJS)
+- **Database**: PostgreSQL, Oracle, MySQL
+- **Architecture**: Domain-Driven Design (DDD), Clean Architecture, Layered Design
+
+### AI & environment
+
+- **AI Agents**: Cursor, Claude Code, Gemini
+- **Infrastructure**: Docker, WSL2 (Ubuntu)
+- **Knowledge Base**: Cosense (formerly Scrapbox)
+
+## Architecture
+
+Folder layout mirrors DDD-style separation even at portfolio scale:
+
+```text
+src/
+├── app/
+│   ├── [locale]/           # Locale-scoped routes (/ja, /en)
+│   │   ├── layout.tsx      # next/font + NextIntlClientProvider + Metadata
+│   │   └── page.tsx        # Thin composition root
+│   ├── globals.css
+│   ├── robots.ts
+│   └── sitemap.ts          # hreflang alternates
+├── components/
+│   ├── sections/           # Presentation only
+│   └── LanguageSwitcher.tsx
+├── domain/
+│   └── portfolio/          # Bounded context (types + view data)
+├── i18n/                   # routing / navigation / request
+├── global.d.ts             # type-safe next-intl keys
+└── middleware.ts
+
+messages/
+├── ja.json
+└── en.json
+```
+
+- **Domain vs presentation**: `components/sections/*` depends on `domain/portfolio/` one-way; UI holds no business rules.
+- **Type-safe i18n**: `global.d.ts` validates `t("...")` keys at compile time.
+- **Composition root**: `app/[locale]/page.tsx` stays thin (~40 lines) and wires sections declaratively.
+- **International SEO**: `sitemap.ts` emits `hreflang` alternates on every URL.
+
+## Internationalization
+
+| Feature | Behavior |
+|---|---|
+| URL format | `/ja/...` and `/en/...` (`localePrefix: "always"`) |
+| Default locale | `en` |
+| Auto detection | `Accept-Language` (`localeDetection: true`) |
+| Persistence | `NEXT_LOCALE` cookie overrides auto detection |
+| Switcher | Top-right `LanguageSwitcher` |
+
+Examples: `ja-JP` → `/ja`; `en-US` / other → `/en`; switcher choice sticks via cookie.
+
+## Development Philosophy
+
+**Vibe Coding** with AI agents: backend discipline (DDD-style separation, solid components, data integrity) becomes precise prompts, while AI accelerates implementation. Career path spans legacy waterfall (public sector / finance, Java) to modern TypeScript / NestJS agile work — which keeps tech choices grounded. Continuous learning notes live in Cosense.
+
+## Getting Started
+
+```bash
+git clone https://github.com/hrn-dev-work/portfolio.git
+cd portfolio
+npm install
+npm run dev   # http://localhost:3000
+```
+
+```bash
+npm run build   # Production build
+npm run start   # Serve production build
+npm run lint    # ESLint
+```
+
+Locale check tips:
+
+```bash
+curl -sS -o /dev/null -w "%{redirect_url}\n" http://localhost:3000/
+curl -sS -H "Accept-Language: ja" -o /dev/null -w "%{redirect_url}\n" http://localhost:3000/
+curl -sS http://localhost:3000/robots.txt
+curl -sS http://localhost:3000/sitemap.xml
+```
+
+Clear the `NEXT_LOCALE` cookie (or use a private window) when re-testing auto detection.
+
+## Contact
+
+- **Email**: [hrn.dev.work@gmail.com](mailto:hrn.dev.work@gmail.com)
+- **GitHub**: [github.com/hrn-dev-work](https://github.com/hrn-dev-work)
+- **LinkedIn**: [linkedin.com/in/hrn-engineer-b1b270409](https://www.linkedin.com/in/hrn-engineer-b1b270409/)
+
+---
+
+# HRN Portfolio（日本語）| シニアバックエンドエンジニア × AI 駆動開発
 
 ![Next.js](https://img.shields.io/badge/Next.js-15-black?style=flat-square&logo=next.js&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white)
@@ -9,47 +131,42 @@
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
 
 Next.js (App Router) と TypeScript で構築したポートフォリオサイトです。
-単なる Web 上の名刺ではなく、 **AI エージェントと熟練バックエンドエンジニアの協調** によるモダンなフロントエンド開発の実例として公開しています。
+単なる Web 上の名刺ではなく、**AI エージェントと熟練バックエンドエンジニアの協調**によるモダンなフロントエンド開発の実例として公開しています。
 
-> **TaxPort**（確定申告支援アプリ）は別リポジトリに分離しました: 同階層の [`../taxport`](../taxport)（`~/workspace/taxport`）を参照してください。
+> **TaxPort**（確定申告支援アプリ）は別リポジトリに分離しました: [`../taxport`](../taxport)（`~/workspace/taxport`）。
 
-## 🌐 Live Demo
+## Live Demo
 
-🔗 [https://portfolio-teal-ten-31.vercel.app/](https://portfolio-teal-ten-31.vercel.app/)
+[https://portfolio-teal-ten-31.vercel.app/](https://portfolio-teal-ten-31.vercel.app/)
 
-※ Vercel の CI/CD パイプラインにより、`main` ブランチへの push で自動デプロイされます。
+`main` への push で Vercel CI/CD が自動デプロイします。
 
----
+## Tech Stack
 
-## 🛠 Tech Stack & Tools
-
-### 💻 Frontend (このサイト)
+### Frontend（このサイト）
 
 - **Framework**: Next.js 15 (App Router, RSC)
 - **Language**: TypeScript (strict)
 - **Styling**: Tailwind CSS
 - **Fonts**: Inter + Noto Sans JP via `next/font`
-- **i18n**: `next-intl` (`/ja`, `/en` サブパス + `Accept-Language` 自動判定)
+- **i18n**: `next-intl`（`/ja`, `/en` サブパス + `Accept-Language` 自動判定）
 - **Icons**: Lucide React
 
-### ⚙️ Core Backend Knowledge (実務経験)
+### Backend 経験
 
 - **Languages / Frameworks**: Java (Spring), PHP (Laravel), Node.js (NestJS)
 - **Database**: PostgreSQL, Oracle, MySQL
 - **Architecture**: Domain-Driven Design (DDD), Clean Architecture, Layered Design
 
-### 🤖 AI & Development Environment
+### AI & 開発環境
 
 - **AI Agents**: Cursor, Claude Code, Gemini
 - **Infrastructure**: Docker, WSL2 (Ubuntu)
-- **Knowledge Base**: Cosense (旧 Scrapbox) で技術情報を体系化
-- **Hardware**: REALFORCE R4
+- **Knowledge Base**: Cosense（旧 Scrapbox）
 
----
+## Architecture
 
-## 🧩 Architecture (DDD-aligned)
-
-「主張している DDD・関心の分離をコード自体で示す」ことを意識し、サイト規模でも Bounded Context をフォルダ構造で表現しています。
+サイト規模でも Bounded Context をフォルダ構造で表現しています。
 
 ```text
 src/
@@ -58,123 +175,70 @@ src/
 │   │   ├── layout.tsx      # next/font + NextIntlClientProvider + Metadata
 │   │   └── page.tsx        # 薄い Composition Root
 │   ├── globals.css
-│   ├── robots.ts           # robots.txt
-│   └── sitemap.ts          # hreflang 付き sitemap
+│   ├── robots.ts
+│   └── sitemap.ts          # hreflang 付き
 ├── components/
-│   ├── sections/           # 描画専用 (Hero / Skills / Projects / Career / Contact)
+│   ├── sections/           # 描画専用
 │   └── LanguageSwitcher.tsx
 ├── domain/
-│   └── portfolio/          # Bounded Context "portfolio"
-│       ├── types.ts        # View 型 (Skill / Project / Career)
-│       ├── skills.ts       # アイコンマッピング含む View データ
-│       ├── projects.ts
-│       ├── career.ts
-│       ├── contact.ts
-│       └── profile.ts
-├── i18n/
-│   ├── routing.ts          # locales / defaultLocale / detection
-│   ├── navigation.ts       # locale-aware Link / useRouter
-│   └── request.ts          # メッセージ読み込み
-├── global.d.ts             # next-intl AppConfig augmentation (型安全なキー)
-└── middleware.ts           # next-intl middleware
+│   └── portfolio/          # Bounded Context（型 + View データ）
+├── i18n/                   # routing / navigation / request
+├── global.d.ts             # 型安全な next-intl キー
+└── middleware.ts
 
 messages/
-├── ja.json                 # 階層キー: Index.hero.* / Skills.featured.ddd.* など
-└── en.json                 # ハイエンド英語コピー (outcome-oriented)
+├── ja.json
+└── en.json
 ```
 
-設計ポイント:
+- **ドメインと描画の分離**: `components/sections/*` → `domain/portfolio/` の一方向依存。UI に業務ルールを置かない
+- **型安全な i18n**: `global.d.ts` で `t("...")` キーをコンパイル時検証
+- **Composition Root**: `app/[locale]/page.tsx` は約 40 行でセクションを組み立てるだけ
+- **国際 SEO**: `sitemap.ts` が全 URL に `hreflang` を付与
 
-- **ドメインデータと描画の分離**: `domain/portfolio/` を `components/sections/*` から参照する一方向依存。UI 層には業務ルールを置かない
-- **型安全な i18n**: `global.d.ts` で `Messages: typeof messages` を augmentation し、`t("Index.hero.title")` のキーをコンパイル時に検証
-- **Composition Root**: `app/[locale]/page.tsx` は約 40 行に抑え、各セクションを宣言的に組み立てるだけの責務
-- **国際 SEO**: `sitemap.ts` が `xhtml:link rel="alternate" hreflang="..."` を全 URL に付与
+## Internationalization
 
----
-
-## 🌍 Internationalization
-
-| 機能 | 設定 / 動作 |
+| 機能 | 動作 |
 |---|---|
 | URL 形式 | `/ja/...` / `/en/...`（`localePrefix: "always"`） |
-| デフォルト言語 | `en`（海外クライアント向け） |
-| 自動判定 | `Accept-Language` ヘッダで判定（`localeDetection: true`） |
-| 永続化 | ユーザーが切り替えた言語は `NEXT_LOCALE` Cookie に保存され、自動判定より優先 |
-| 切替 UI | 右上の `LanguageSwitcher`（Lucide `Languages` アイコン付き） |
+| デフォルト | `en` |
+| 自動判定 | `Accept-Language`（`localeDetection: true`） |
+| 永続化 | `NEXT_LOCALE` Cookie が自動判定より優先 |
+| 切替 UI | 右上の `LanguageSwitcher` |
 
-挙動例:
+例: `ja-JP` → `/ja`、`en-US` など → `/en`。切替後は Cookie で維持。
 
-- ブラウザ `ja-JP` で `/` を開く → `/ja` に 307 リダイレクト
-- ブラウザ `en-US` / `fr-FR` などで `/` を開く → `/en` に 307 リダイレクト
-- 言語切替ボタンで `en` を選択 → 以降は `Accept-Language` を無視して `/en` を維持
+## Development Philosophy
 
----
+**Vibe Coding** で AI エージェントと協調。バックエンドで培った責務分離・コンポーネント設計・データ整合性をプロンプトとして精密化し、実装は AI と高速に回す。官公庁・金融のウォーターフォール（Java）から、TypeScript / NestJS のアジャイルへ。レガシーの苦労を知るから技術選定が地に足につく。学習ログは Cosense に集約。
 
-## 🎯 Development Philosophy
-
-### 1. Vibe Coding × AI Collaboration
-
-AI エージェントを最大限に活用する **Vibe Coding** スタイルで構築しています。
-バックエンド開発で培った「DDD 的な責務分離」「堅牢なコンポーネント設計」「データ整合性」をプロンプト（要件定義）として高精度に言語化し、実装そのものは AI と高速に回す。これにより、エンタープライズ品質とスタートアップ的なスピードの両立を検証しています。
-
-### 2. Legacy to Modern
-
-官公庁・金融向けのウォーターフォール開発（Java）からキャリアをスタートし、現在は脆弱性管理 SaaS や医療機関向けアプリといったモダンなアジャイル開発（TypeScript / NestJS）にシフト。レガシーの苦労を知るからこそ、最新技術のメリットを正しく評価し、地に足の着いた技術選定を行えると考えています。
-
-### 3. Continuous Learning
-
-技術書の読書録や日々の学習ログを Cosense（旧 Scrapbox）に集約し、個人ナレッジベースとして運用。常に「知のネットワーク」を広げ、実務に還元するサイクルを回しています。
-
----
-
-## 📦 Getting Started
-
-ローカル環境での立ち上げ手順です。
+## Getting Started
 
 ```bash
-# リポジトリのクローン
 git clone https://github.com/hrn-dev-work/portfolio.git
 cd portfolio
-
-# 依存関係のインストール
 npm install
-
-# 開発サーバーの起動 (http://localhost:3000)
-npm run dev
+npm run dev   # http://localhost:3000
 ```
 
-その他のスクリプト:
-
 ```bash
-npm run build   # 本番ビルド (next build)
-npm run start   # ビルド済みサーバを起動
+npm run build   # 本番ビルド
+npm run start   # ビルド済みサーバ起動
 npm run lint    # ESLint
 ```
 
----
-
-## 🧪 動作確認のヒント
-
-ロケール検出を手元で確認する例:
+ロケール確認の例:
 
 ```bash
-# defaultLocale (en) にフォールバック
 curl -sS -o /dev/null -w "%{redirect_url}\n" http://localhost:3000/
-
-# ブラウザ言語が日本語 → /ja
-curl -sS -H "Accept-Language: ja" -o /dev/null \
-  -w "%{redirect_url}\n" http://localhost:3000/
-
-# 国際 SEO 用ファイル
+curl -sS -H "Accept-Language: ja" -o /dev/null -w "%{redirect_url}\n" http://localhost:3000/
 curl -sS http://localhost:3000/robots.txt
 curl -sS http://localhost:3000/sitemap.xml
 ```
 
-ブラウザで言語自動判定を再テストする際は、DevTools の Application → Cookies から `NEXT_LOCALE` を削除（またはシークレットウィンドウで開く）してください。
+自動判定を再テストするときは `NEXT_LOCALE` Cookie を削除するか、シークレットウィンドウで開いてください。
 
----
-
-## 📬 Contact
+## Contact
 
 - **Email**: [hrn.dev.work@gmail.com](mailto:hrn.dev.work@gmail.com)
 - **GitHub**: [github.com/hrn-dev-work](https://github.com/hrn-dev-work)
