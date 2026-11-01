@@ -1,18 +1,18 @@
 {
   "Metadata": {
     "title": "HRN | バックエンドエンジニア デジタル名刺",
-    "description": "HRNのデジタル名刺サイト。バックエンドエンジニアとしての経歴、スキル、主要プロジェクト、連絡先を掲載。",
+    "description": "HRNのデジタル名刺。Java を主軸に、Spring / NestJS の API と、未経験者向け Java 研修の講師経験を掲載。",
     "ogTitle": "HRN | バックエンドエンジニア デジタル名刺",
-    "ogDescription": "設計と運用に強いバックエンドエンジニア HRN のプロフィール。",
+    "ogDescription": "Java と、未経験者向け Java 研修の講師経験があるバックエンドエンジニア HRN。",
     "siteName": "HRN Digital Business Card"
   },
   "Index": {
     "hero": {
-      "eyebrow": "NestJS & Laravel API · 連携",
+      "eyebrow": "Java / Spring · NestJS",
       "nameLine": "HRN",
       "roleLine": "バックエンドエンジニア",
-      "summary": "NestJS / Laravel で API 設計・Webhook・外部連携を担当。Java / PHP（Laravel）で7〜8年、近年は TypeScript リプレイスにも従事。\nAI駆動開発を実務に組み込み、開発速度と品質の両立を重視しています。",
-      "highlight": "公開デモ: Ops Inbox API（Nest Webhook）と Laravel Outbound API。官公庁・金融・SaaS・医療の受託実績あり。",
+      "summary": "Java で、詳細設計から実装・テストまで担当してきました。Spring と TypeScript（NestJS）でも API と連携処理を実装します。\n2024年以降、未経験者向け Java 研修の講師を約7ヶ月担当（講師1人あたり5名程度）。開発では Claude Code で仕様の読み解きやテストコード作成もしています。",
+      "highlight": "公開デモは Ops Inbox API（Nest）と Laravel Outbound API。官公庁・金融・人事の Java 改修と、医療向けの Java から TypeScript への載せ替えがあります。",
       "imageAlt": "プロフィール画像"
     }
   },
@@ -24,24 +24,24 @@
       "ddd": {
         "title": "Domain-Driven Design",
         "subtitle": "現在深く学習・実践中",
-        "description": "Java / PHP で培った堅牢なシステム設計の経験を土台に、TypeScript（NestJS / Next.js）環境でも、ビジネスロジックとインフラ層の分離、境界付けられたコンテキストを意識したクリーンアーキテクチャ設計を追求しています。長期的な保守性と拡張性を最優先に、ドメインモデルを中心に据えた実装を志向。",
+        "description": "Java で培ったシステム設計の経験を土台に、TypeScript（NestJS / Next.js）でも、ビジネスロジックとインフラ層の分離、境界付けられたコンテキストを意識した設計をしています。",
         "tags": ["Bounded Context", "Clean Architecture", "Layered Design", "NestJS", "Next.js"]
       },
       "vibeCoding": {
         "title": "AI Prompt Engineering & Vibe Coding",
         "subtitle": "実務レベルでの AI オーケストレーション",
-        "description": "Cursor / Claude Code / Gemini を使い分け、業務でオーケストレーション。DDD に基づくコンポーネント設計や責務分離の要件を高精度なプロンプトとして言語化し、AI に実装を任せることで、品質と開発スピードを両立する Vibe Coding を実践しています。",
-        "tags": ["Cursor", "Claude Code", "Gemini", "Vibe Coding", "Spec-Driven"]
+        "description": "Cursor、Claude Code、Gemini を案件で使い分けています。設計の境界をプロンプトにし、生成されたコードは自分で確認します。AI活用業務改善検定の結果は適正あり。",
+        "tags": ["Cursor", "Claude Code", "Gemini", "Vibe Coding", "AI活用業務改善検定"]
       }
     },
     "categories": {
       "languages": {
         "title": "Languages",
-        "description": "サーバーサイドを中心とした言語スタック"
+        "description": "Java を主軸に、TypeScript / SQL。PHP は Laravel での改修経験"
       },
       "frontend": {
         "title": "Frontend",
-        "description": "API 連携を意識したモダンUI実装"
+        "description": "Java 案件では HTML、jQuery、JSP、XML。React と Next.js も使う。"
       },
       "backend": {
         "title": "Backend",
@@ -55,7 +55,7 @@
   },
   "Projects": {
     "heading": "Projects",
-    "tagline": "受託実績 + 公開デモ",
+    "tagline": "受託・研修 + 公開デモ",
     "repoLabel": "GitHub",
     "demoLabel": "Live API",
     "demoNoteDb": "無料枠の都合で、別サンプルが DB を使っている間はホスト DB が止まっていることがあります。",
@@ -67,9 +67,13 @@
       "title": "Laravel Outbound API — 連携モジュール（公開サンプル）",
       "description": "Laravel スポット案件向けの証明用デモ。notify の入力検証、モックまたは HTTP 外向き呼び出しと記録、PHPUnit + smoke、Render 公開。本番キーをリポに入れずに API つなぎを示します。"
     },
+    "javaTraining": {
+      "title": "未経験者向け Java 研修（社内講師）",
+      "description": "2024年以降、未経験者向け社内研修の講師を約7ヶ月担当。講師1人あたり研修生は5名程度。Java の基本文法、ファイル入出力のバッチ、JUnit、SQL（MySQL / PostgreSQL）、Servlet / JSP、Spring MVC / Spring Boot、Git、Linux を指導。コードと設計書のレビュー、進捗管理、資料作成も担当。"
+    },
     "medicalApp": {
-      "title": "医療機関向け AI 連携Web/スマホアプリ開発",
-      "description": "遅延プロジェクトのリカバリーとして参画。Java から TypeScript へのリプレイスで DDD を用いた再設計、API最適化、DB設計、テスト自動化を担当。"
+      "title": "医療機関向け AI 連携 Web・スマホアプリ",
+      "description": "医療機関向けメッセージ機能の新規開発と、既存 Java から TypeScript（NestJS）への載せ替え。遅延のリカバリーとして参画（6ヶ月、47名規模）。DDD で構造を組み直し、API と DB を見直した。Claude Code で Java の読み解きと移行を進め、生成コードは業務ロジックとセキュリティの観点で確認。Android（Kotlin）の改修と動作確認を担当し、iOS は静的レビューまで。"
     },
     "vulnerabilityPlatform": {
       "title": "脆弱性管理プラットフォーム開発・運用保守",
@@ -84,18 +88,18 @@
     "heading": "Career",
     "senior": {
       "period": "2024 - Present",
-      "role": "Senior Backend Engineer",
-      "detail": "モダン技術スタックへの移行とAI駆動開発を推進。PHP（Laravel）による脆弱性管理SaaS開発、TypeScript/NestJSによる医療向けアプリのDDDベース再設計を担当し、リファクタリング、テスト自動化、Docker/WSL2による開発環境標準化を牽引。"
+      "role": "Backend Engineer",
+      "detail": "未経験者向け Java 研修の講師を約7ヶ月担当。PHP（Laravel）で脆弱性管理 SaaS の機能追加、TypeScript / NestJS で医療向けアプリを Java から載せ替え。テストの自動化と Docker / WSL2 の開発環境も整えた。"
     },
     "midlevel": {
       "period": "2021 - 2024",
       "role": "Backend Engineer",
-      "detail": "法人向け総合人事システムの法改正対応プロジェクト等に約3年間従事。Java、PostgreSQL、Oracleを用いた詳細設計・実装・テストを継続し、長期案件で安定稼働を支えるシステム改修を担当。"
+      "detail": "法人向け総合人事システムの法改正対応に約3年間従事。Java、PostgreSQL、Oracle で詳細設計・実装・単体テストを継続し、長期案件の改修を担当。"
     },
     "junior": {
       "period": "2019 - 2021",
       "role": "Software Engineer",
-      "detail": "官公庁・金融向けシステム（職業安定所システム、個人年金保険システム等）の開発・保守でキャリアをスタート。Java/SQLを中心にウォーターフォール開発の詳細設計からテストまでを経験し、バックエンド開発の基礎を確立。新人向け社内IT研修の講師も担当。"
+      "detail": "官公庁・金融向けでキャリアを開始。職業安定所システムでは基本設計から結合テストまで、個人年金保険では単体テストを担当。Java / SQL が中心。"
     }
   },
   "Contact": {

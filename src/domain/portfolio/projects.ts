@@ -15,8 +15,12 @@ export const projectViews: ProjectView[] = [
     demoUrl: "https://laravel-outbound-api.onrender.com"
   },
   {
+    key: "javaTraining",
+    stack: ["Java", "Spring Boot", "JUnit", "MySQL", "PostgreSQL", "Git"]
+  },
+  {
     key: "medicalApp",
-    stack: ["TypeScript", "NestJS", "Prisma", "PostgreSQL", "Redis", "AWS S3/SQS"]
+    stack: ["Java", "TypeScript", "NestJS", "Kotlin", "PostgreSQL", "AWS"]
   },
   {
     key: "vulnerabilityPlatform",

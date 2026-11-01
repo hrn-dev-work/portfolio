@@ -3,10 +3,12 @@ import {
   Braces,
   Cloud,
   Code,
+  CodeXml,
   Coffee,
   Container,
   Database,
   FileCode,
+  FileText,
   Flame,
   GitBranch,
   Layers,
@@ -16,8 +18,7 @@ import {
   Sparkles,
   Terminal,
   Triangle,
-  Webhook,
-  Wind
+  Webhook
 } from "lucide-react";
 
 import type { FeaturedSkillView, SkillCategoryView } from "./types";
@@ -40,19 +41,22 @@ export const skillCategories: SkillCategoryView[] = [
     key: "languages",
     icon: Code,
     items: [
-      { name: "TypeScript", icon: Braces },
       { name: "Java", icon: Coffee },
-      { name: "PHP", icon: FileCode },
-      { name: "SQL", icon: Database }
+      { name: "TypeScript", icon: Braces },
+      { name: "SQL", icon: Database },
+      { name: "PHP", icon: FileCode }
     ]
   },
   {
     key: "frontend",
     icon: LayoutDashboard,
     items: [
+      { name: "HTML", icon: FileCode },
+      { name: "jQuery", icon: Code },
+      { name: "JSP", icon: FileText },
+      { name: "XML", icon: CodeXml },
       { name: "React", icon: Atom },
-      { name: "Next.js", icon: Triangle },
-      { name: "Tailwind CSS", icon: Wind }
+      { name: "Next.js", icon: Triangle }
     ]
   },
   {

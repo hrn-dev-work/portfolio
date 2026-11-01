@@ -1,4 +1,4 @@
-# HRN Portfolio（日本語）| シニアバックエンドエンジニア × AI 駆動開発
+# HRN Portfolio（日本語）| バックエンドエンジニア × AI 駆動開発
 
 [![日本語](https://img.shields.io/badge/%E6%97%A5%E6%9C%AC%E8%AA%9E-0969da?style=for-the-badge)](./README.md) [![English](https://img.shields.io/badge/English-57606a?style=for-the-badge)](./README.en.md)
 
@@ -32,7 +32,7 @@ Next.js (App Router) と TypeScript で構築したポートフォリオサイ�
 
 ### Backend 経験
 
-- **Languages / Frameworks**: Java (Spring), PHP (Laravel), Node.js (NestJS)
+- **Languages / Frameworks**: Java（Spring）、TypeScript（NestJS）。PHP（Laravel）は案件経験で、主戦場ではない。
 - **Database**: PostgreSQL, Oracle, MySQL
 - **Architecture**: Domain-Driven Design (DDD), Clean Architecture, Layered Design
 

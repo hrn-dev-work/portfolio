@@ -5,6 +5,7 @@ export type SkillCategoryKey = "languages" | "frontend" | "backend" | "infra";
 export type ProjectKey =
   | "opsInboxApi"
   | "laravelOutboundApi"
+  | "javaTraining"
   | "medicalApp"
   | "vulnerabilityPlatform"
   | "hrSystem";

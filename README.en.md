@@ -1,4 +1,4 @@
-# HRN Portfolio | Senior Backend Engineer × AI-Driven Development
+# HRN Portfolio | Backend Engineer × AI-Driven Development
 
 [![日本語](https://img.shields.io/badge/%E6%97%A5%E6%9C%AC%E8%AA%9E-57606a?style=for-the-badge)](./README.md) [![English](https://img.shields.io/badge/English-0969da?style=for-the-badge)](./README.en.md)
 
@@ -9,7 +9,7 @@
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
 
 A portfolio site built with Next.js (App Router) and TypeScript.
-More than a digital business card — a working example of a senior backend engineer collaborating with AI agents on modern frontend delivery.
+More than a digital business card — a working example of a backend engineer collaborating with AI agents on modern frontend delivery.
 
 > **TaxPort** (tax-filing support app) lives in a separate repo: [`../taxport`](https://github.com/hrn-dev-work/TaxPort) (`~/workspace/taxport`).
 
@@ -32,7 +32,7 @@ Vercel CI/CD auto-deploys every push to `main`.
 
 ### Backend experience
 
-- **Languages / Frameworks**: Java (Spring), PHP (Laravel), Node.js (NestJS)
+- **Languages / Frameworks**: Java (Spring), TypeScript (NestJS). PHP (Laravel) is project work, not a primary stack.
 - **Database**: PostgreSQL, Oracle, MySQL
 - **Architecture**: Domain-Driven Design (DDD), Clean Architecture, Layered Design
 

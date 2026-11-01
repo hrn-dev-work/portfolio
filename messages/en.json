@@ -1,18 +1,18 @@
 {
   "Metadata": {
-    "title": "HRN | Senior Backend Engineer Portfolio",
-    "description": "Portfolio of HRN — a senior backend engineer specializing in Domain-Driven Design, large-scale system modernization, and AI-orchestrated software delivery.",
-    "ogTitle": "HRN | Senior Backend Engineer Portfolio",
-    "ogDescription": "Senior backend engineer architecting resilient, evolvable systems with DDD, Clean Architecture, and AI-driven development.",
-    "siteName": "HRN — Senior Backend Engineer"
+    "title": "HRN | Backend Engineer Portfolio",
+    "description": "Portfolio of HRN, a backend engineer. Java, plus Spring and NestJS APIs, and internal Java training for beginners.",
+    "ogTitle": "HRN | Backend Engineer Portfolio",
+    "ogDescription": "Backend engineer with Java, API work, and internal Java training for beginners.",
+    "siteName": "HRN — Backend Engineer"
   },
   "Index": {
     "hero": {
-      "eyebrow": "NestJS & Laravel API · Integrations",
+      "eyebrow": "Java / Spring · NestJS",
       "nameLine": "HRN",
-      "roleLine": "Senior Backend Engineer",
-      "summary": "NestJS and Laravel backend for API design, webhooks, and third-party integrations — with 7+ years shipping Java/PHP systems and leading TypeScript replatforming.\nI embed AI-driven development into production workflows to deliver enterprise-grade quality at high velocity.",
-      "highlight": "Public proof demos: Ops Inbox API (Nest webhook) and Laravel Outbound API — plus client work across public sector, finance, SaaS, and healthcare.",
+      "roleLine": "Backend Engineer",
+      "summary": "I have done Java work from detailed design through testing. I also build APIs and integrations with Spring and TypeScript (NestJS).\nFrom 2024, I taught an internal Java course for beginners for about seven months, with about five trainees per instructor. In delivery work I use Claude Code to read specifications and draft tests.",
+      "highlight": "Public demos: Ops Inbox API (Nest webhooks) and Laravel Outbound API. Client work includes Java changes for public-sector, finance, and HR systems, and a Java-to-TypeScript move for a healthcare app.",
       "imageAlt": "Profile portrait of HRN"
     }
   },
@@ -24,24 +24,24 @@
       "ddd": {
         "title": "Domain-Driven Design",
         "subtitle": "Actively practiced & continuously refined",
-        "description": "Built on the system-design discipline cultivated across Java and PHP, I architect TypeScript (NestJS / Next.js) systems that ruthlessly separate business logic from infrastructure and treat bounded contexts as first-class architectural primitives. Every implementation is anchored in the domain model — engineered for the long-term maintainability and evolutionary change that real businesses demand.",
+        "description": "Java system design is the base. In TypeScript (NestJS / Next.js) I keep business logic separate from infrastructure and pay attention to bounded contexts.",
         "tags": ["Bounded Context", "Clean Architecture", "Layered Design", "NestJS", "Next.js"]
       },
       "vibeCoding": {
         "title": "AI Prompt Engineering & Vibe Coding",
         "subtitle": "Production-grade AI orchestration",
-        "description": "I orchestrate Cursor, Claude Code, and Gemini as a coordinated engineering force in real production work. By translating DDD-grounded component designs and responsibility boundaries into precise, specification-level prompts, I direct AI to execute the implementation — shipping production-ready code at exceptional velocity without compromising architectural quality. This is Vibe Coding executed with engineering rigor.",
-        "tags": ["Cursor", "Claude Code", "Gemini", "Vibe Coding", "Spec-Driven"]
+        "description": "I use Cursor, Claude Code, and Gemini on delivery work. I turn component boundaries into prompts, then review the code AI writes. Result on the AI business-improvement assessment (AI活用業務改善検定): suitable.",
+        "tags": ["Cursor", "Claude Code", "Gemini", "Vibe Coding", "AI assessment"]
       }
     },
     "categories": {
       "languages": {
         "title": "Languages",
-        "description": "Server-side languages I rely on for production work"
+        "description": "Java first, then TypeScript and SQL. PHP is Laravel project work."
       },
       "frontend": {
         "title": "Frontend",
-        "description": "Modern UI implementation engineered around the API contract"
+        "description": "On Java projects: HTML, jQuery, JSP, and XML. I also use React and Next.js."
       },
       "backend": {
         "title": "Backend",
@@ -55,7 +55,7 @@
   },
   "Projects": {
     "heading": "Selected Engagements",
-    "tagline": "Client work + public proof demos",
+    "tagline": "Client work, training, and public demos",
     "repoLabel": "GitHub",
     "demoLabel": "Live API",
     "demoNoteDb": "Hosted DB may be offline on the free tier when another sample is using the slot.",
@@ -67,35 +67,39 @@
       "title": "Laravel Outbound API — Integration Module (public sample)",
       "description": "Portfolio proof for Laravel spot work: validated notify endpoint, mock or HTTP outbound call with persisted audit rows, PHPUnit + smoke, hosted on Render. Shows API glue without shipping vendor secrets."
     },
+    "javaTraining": {
+      "title": "Internal Java training for beginners",
+      "description": "From 2024, taught an internal course for people new to programming for about seven months, with about five trainees per instructor. Topics: Java basics, file I/O batch programs, JUnit, SQL on MySQL and PostgreSQL, Servlet/JSP, Spring MVC and Spring Boot, Git, and Linux. Also reviewed code and design docs, tracked progress, and wrote the course materials."
+    },
     "medicalApp": {
-      "title": "AI-Integrated Web & Mobile Application for Healthcare Providers",
-      "description": "Strategic recovery of a delayed, high-stakes project through architectural redesign. Architected the Java-to-TypeScript replatforming on a DDD foundation, optimized API performance, modeled the database schema, and established automated test coverage to safeguard delivery."
+      "title": "Healthcare web and mobile app with AI-related features",
+      "description": "Built a new messaging feature for a healthcare platform and moved the existing Java system to TypeScript (NestJS). Joined to recover a late project (6 months, 47 people). Rebuilt the structure with DDD and revised the API and database. Used Claude Code to read the Java code and continue the migration, then checked generated code for business rules and security. Shipped Android (Kotlin) changes and tested them on device. iOS was static review only."
     },
     "vulnerabilityPlatform": {
       "title": "Vulnerability Management SaaS — Platform Development & Operations",
-      "description": "Owned end-to-end backend feature delivery and targeted refactoring on a vulnerability-management SaaS. Hardened third-party API integrations, unified cross-service exception handling, and standardized the development workflow with Docker / WSL2 — compressing onboarding time and lifting overall code quality."
+      "description": "Added backend features and refactored a vulnerability-management SaaS. Integrated external APIs, unified exception handling, and standardized the dev environment with Docker and WSL2."
     },
     "hrSystem": {
       "title": "Enterprise HR Management System",
-      "description": "Sustained multi-year continuous delivery on a business-critical HR platform. Owned detailed design, implementation, and unit testing across successive legal-compliance releases — protecting stable operations while shipping change with confidence."
+      "description": "Legal-compliance updates on an enterprise HR system. Detailed design, implementation, and unit testing across a multi-year engagement."
     }
   },
   "Career": {
     "heading": "Career",
     "senior": {
       "period": "2024 — Present",
-      "role": "Senior Backend Engineer",
-      "detail": "Spearheading modernization and AI-driven development across legacy estates. Delivered a vulnerability-management SaaS in PHP (Laravel) and architected a DDD-based redesign of a healthcare application on TypeScript / NestJS. Championed refactoring, test automation, and a Docker / WSL2-based dev environment standard adopted across teams."
+      "role": "Backend Engineer",
+      "detail": "Taught an internal Java course for beginners for about seven months. Also added features on a vulnerability-management SaaS in PHP (Laravel), and moved a healthcare app from Java to TypeScript / NestJS. Set up automated tests and a Docker / WSL2 development environment."
     },
     "midlevel": {
       "period": "2021 — 2024",
       "role": "Backend Engineer",
-      "detail": "Drove roughly three years of continuous delivery on legal-compliance updates for an enterprise HR platform. Owned detailed design, implementation, and testing across Java, PostgreSQL, and Oracle — sustaining stable long-term operations on a business-critical system."
+      "detail": "Spent about three years on legal-compliance updates for an enterprise HR platform. Did detailed design, implementation, and unit testing in Java, PostgreSQL, and Oracle."
     },
     "junior": {
       "period": "2019 — 2021",
       "role": "Software Engineer",
-      "detail": "Launched my career engineering government and financial systems — including a national employment-services platform and an individual pension insurance system. Mastered waterfall-style detailed design through QA in Java / SQL, and delivered internal IT onboarding training to new engineers."
+      "detail": "Started on government and finance systems. On a public employment-service system, work ran from basic design through integration testing. On an individual pension system, work was unit testing. Mainly Java and SQL."
     }
   },
   "Contact": {
