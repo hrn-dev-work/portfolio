@@ -1,4 +1,4 @@
-# HRN Portfolio（日本語）| バックエンドエンジニア × AI 駆動開発
+# 職務経歴サイト｜Javaバックエンド7年とAI駆動開発
 
 [![日本語](https://img.shields.io/badge/%E6%97%A5%E6%9C%AC%E8%AA%9E-0969da?style=for-the-badge)](./README.md) [![English](https://img.shields.io/badge/English-57606a?style=for-the-badge)](./README.en.md)
 

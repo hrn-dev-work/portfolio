@@ -1,4 +1,4 @@
-# HRN Portfolio | Backend Engineer × AI-Driven Development
+# Career site: 7 years of Java backend and AI-assisted development
 
 [![日本語](https://img.shields.io/badge/%E6%97%A5%E6%9C%AC%E8%AA%9E-57606a?style=for-the-badge)](./README.md) [![English](https://img.shields.io/badge/English-0969da?style=for-the-badge)](./README.en.md)
 
