@@ -2,6 +2,8 @@
 
 [![日本語](https://img.shields.io/badge/%E6%97%A5%E6%9C%AC%E8%AA%9E-0969da?style=for-the-badge)](./README.md) [![English](https://img.shields.io/badge/English-57606a?style=for-the-badge)](./README.en.md)
 
+これは公開している職務経歴サイトです。Java のバックエンド（サーバー側）の仕事と、AI と一緒に作った仕事を紹介しています。公開中のサイトのアドレスは [https://portfolio-teal-ten-31.vercel.app/](https://portfolio-teal-ten-31.vercel.app/) です。
+
 ![Next.js](https://img.shields.io/badge/Next.js-15-black?style=flat-square&logo=next.js&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white)
 ![next-intl](https://img.shields.io/badge/next--intl-i18n-1f6feb?style=flat-square)
@@ -11,17 +13,17 @@
 Next.js (App Router) と TypeScript で構築したポートフォリオサイトです。
 単なる Web 上の名刺ではなく、**AI エージェントと熟練バックエンドエンジニアの協調**によるモダンなフロントエンド開発の実例として公開しています。
 
-> **TaxPort**（確定申告支援アプリ）は別リポジトリに分離しました: [`../taxport`](https://github.com/hrn-dev-work/TaxPort)（`~/workspace/taxport`）。
+> **TaxPort**（確定申告支援アプリ）は、この職務経歴サイトとは別のプロジェクトです。コードは別リポジトリ [hrn-dev-work/TaxPort](https://github.com/hrn-dev-work/TaxPort) に分離しています。作者のパソコン上の置き場所は `~/workspace/taxport` です。
 
-## Live Demo
+## 公開デモ
 
 [https://portfolio-teal-ten-31.vercel.app/](https://portfolio-teal-ten-31.vercel.app/)
 
 `main` への push で Vercel CI/CD が自動デプロイします。
 
-## Tech Stack
+## 技術スタック
 
-### Frontend（このサイト）
+### フロントエンド（このサイト）
 
 - **Framework**: Next.js 15 (App Router, RSC)
 - **Language**: TypeScript (strict)
@@ -30,19 +32,19 @@ Next.js (App Router) と TypeScript で構築したポートフォリオサイ�
 - **i18n**: `next-intl`（`/ja`, `/en` サブパス + `Accept-Language` 自動判定）
 - **Icons**: Lucide React
 
-### Backend 経験
+### バックエンド経験
 
 - **Languages / Frameworks**: Java（Spring）、TypeScript（NestJS）。PHP（Laravel）は案件経験で、主戦場ではない。
 - **Database**: PostgreSQL, Oracle, MySQL
 - **Architecture**: Domain-Driven Design (DDD), Clean Architecture, Layered Design
 
-### AI & 開発環境
+### AI と開発環境
 
 - **AI Agents**: Cursor, Claude Code, Gemini
 - **Infrastructure**: Docker, WSL2 (Ubuntu)
 - **Knowledge Base**: Cosense（旧 Scrapbox）
 
-## Architecture
+## アーキテクチャ
 
 サイト規模でも Bounded Context をフォルダ構造で表現しています。
 
@@ -74,7 +76,7 @@ messages/
 - **Composition Root**: `app/[locale]/page.tsx` は約 40 行でセクションを組み立てるだけ
 - **国際 SEO**: `sitemap.ts` が全 URL に `hreflang` を付与
 
-## Internationalization
+## 国際化
 
 | 機能 | 動作 |
 |---|---|
@@ -86,11 +88,11 @@ messages/
 
 例: `ja-JP` → `/ja`、`en-US` など → `/en`。切替後は Cookie で維持。
 
-## Development Philosophy
+## 開発方針
 
 **Vibe Coding** で AI エージェントと協調。バックエンドで培った責務分離・コンポーネント設計・データ整合性をプロンプトとして精密化し、実装は AI と高速に回す。官公庁・金融のウォーターフォール（Java）から、TypeScript / NestJS のアジャイルへ。レガシーの苦労を知るから技術選定が地に足につく。学習ログは Cosense に集約。
 
-## Getting Started
+## 始め方
 
 ```bash
 git clone https://github.com/hrn-dev-work/portfolio.git
@@ -116,7 +118,7 @@ curl -sS http://localhost:3000/sitemap.xml
 
 自動判定を再テストするときは `NEXT_LOCALE` Cookie を削除するか、シークレットウィンドウで開いてください。
 
-## Contact
+## 連絡先
 
 - **Email**: [hrn.dev.work@gmail.com](mailto:hrn.dev.work@gmail.com)
 - **GitHub**: [github.com/hrn-dev-work](https://github.com/hrn-dev-work)

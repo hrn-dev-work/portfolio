@@ -2,6 +2,8 @@
 
 [![日本語](https://img.shields.io/badge/%E6%97%A5%E6%9C%AC%E8%AA%9E-57606a?style=for-the-badge)](./README.md) [![English](https://img.shields.io/badge/English-0969da?style=for-the-badge)](./README.en.md)
 
+This is the public career site. It shows Java backend work and work built with AI. The live site address is [https://portfolio-teal-ten-31.vercel.app/](https://portfolio-teal-ten-31.vercel.app/).
+
 ![Next.js](https://img.shields.io/badge/Next.js-15-black?style=flat-square&logo=next.js&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white)
 ![next-intl](https://img.shields.io/badge/next--intl-i18n-1f6feb?style=flat-square)
@@ -11,7 +13,7 @@
 A portfolio site built with Next.js (App Router) and TypeScript.
 More than a digital business card — a working example of a backend engineer collaborating with AI agents on modern frontend delivery.
 
-> **TaxPort** (tax-filing support app) lives in a separate repo: [`../taxport`](https://github.com/hrn-dev-work/TaxPort) (`~/workspace/taxport`).
+> **TaxPort** (tax-filing support app) is a separate project from this career site. Its code was split into its own repository: [hrn-dev-work/TaxPort](https://github.com/hrn-dev-work/TaxPort). On the author's computer those files are at `~/workspace/taxport`.
 
 ## Live Demo
 
